@@ -6,7 +6,7 @@ import numpy as np
 import pysrt
 
 
-def create_video(gameplay_location:str, audio_clip_location:str, json_transcript_location:str, personaje_image_location:str):
+def create_video(gameplay_location:str, audio_clip_location:str, json_transcript_location:str, personaje_image_location:str, name:str):
     print("Creando un video !")
     #VIDEO_WIDTH = 1080
     #VIDEO_HEIGHT = 1920
@@ -71,7 +71,7 @@ def create_video(gameplay_location:str, audio_clip_location:str, json_transcript
         final_clip = CompositeVideoClip(list_of_clips)
         final_clip.audio = audioclip
         # Exportar el video final
-        export_name = f"./exports/{random.randint(0,100000000000000)}.mp4"
+        export_name = f"./exports/{name}.mp4"
         final_clip.write_videofile(export_name, threads=8, fps=24)
     except Exception as e:
         print(f"Ocurrió un error al crear el video final: {e}")

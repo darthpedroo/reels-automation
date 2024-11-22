@@ -23,7 +23,9 @@ def create_video_homero():
                 absolute_transcript_path = transcript_paths + "/" + transcript
                 absolute_foto_path = homero_foto_path + "/" + homero_foto
                 
-                create_video(absolute_gameplay_path,absolute_audio_path,absolute_transcript_path,absolute_foto_path)
+                name_of_video = audio.split(".wav")[0]
+                
+                create_video(absolute_gameplay_path,absolute_audio_path,absolute_transcript_path,absolute_foto_path,name_of_video)
 
     print(audios_homero)
     print(transcripts_homero)

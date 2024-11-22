@@ -24,10 +24,11 @@
 *.mxf
 *.ogg
 
+
 #Ignore Json files
 
 *.json
-
+.tmp.driveupload
 
 # Optional: Ignore audio and video files in nested folders
 **/*.mp3
@@ -54,3 +55,5 @@
 **/*.ogg
 **/*.json
 
+**/*__pycache__
+**/*.tmp.driveupload
