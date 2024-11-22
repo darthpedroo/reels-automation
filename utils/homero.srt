@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:3,000
+¡Hola! Soy Homero Simpson, y hoy vamos a hablar sobre patrones de diseño en programación.
+
+2
+00:00:03,500 --> 00:00:08,000
+Un patrón de diseño es una solución reutilizable a un problema común que ocurre en el desarrollo de software.
+
+3
+00:00:08,500 --> 00:00:12,000
+Hoy veremos algunos de los patrones más conocidos, como el patrón Singleton.
+
+4
+00:00:12,500 --> 00:00:18,000
+El patrón Singleton asegura que una clase tenga una única instancia y proporciona un punto de acceso global a ella.
+
+5
+00:00:18,500 --> 00:00:22,000
+Otro patrón popular es el patrón Factory. Este patrón nos ayuda a crear objetos sin especificar la clase exacta del objeto.
+
+6
+00:00:22,500 --> 00:00:28,000
+El patrón Observer, por ejemplo, es perfecto para situaciones donde un objeto necesita notificar a otros objetos sobre un cambio de estado.
+
+7
+00:00:28,500 --> 00:00:34,000
+Y no olvidemos el patrón Strategy, que permite cambiar el comportamiento de un objeto en tiempo de ejecución.
+
+8
+00:00:34,500 --> 00:00:38,000
+Todos estos patrones nos ayudan a hacer que nuestro código sea más limpio y fácil de mantener.
+
+9
+00:00:38,500 --> 00:00:43,000
+Así que, la próxima vez que escribas código, recuerda aplicar estos patrones para mejorar la calidad del software.
+
+10
+00:00:43,500 --> 00:00:45,000
+¡Y eso es todo por hoy! ¡Hasta la próxima!
