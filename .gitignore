@@ -29,6 +29,7 @@
 
 *.json
 .tmp.driveupload
+.tmp.drivedownload
 
 # Optional: Ignore audio and video files in nested folders
 **/*.mp3
@@ -57,3 +58,4 @@
 
 **/*__pycache__
 **/*.tmp.driveupload
+**/*.tmp.drivedownload

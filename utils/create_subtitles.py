@@ -73,7 +73,7 @@ def process_folder(input_folder, output_folder):
             transcribe_audio(file_path, output_folder)
 
 # Folder paths (replace these with your actual paths)
-input_folder = "audios_homero"  # Folder containing audio files
+input_folder = "tts_audio"  # Folder containing audio files
 output_folder = "transcripts_homero"  # Folder to save transcripts
 
 # Run the script
