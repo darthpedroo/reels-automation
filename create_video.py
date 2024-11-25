@@ -31,7 +31,7 @@ def create_video(gameplay_location:str, audio_clip_location:str, json_transcript
             intro_clip,
         ]
 
-    overlay_image = ImageClip(personaje_image_location).resized(height=160)
+    overlay_image = ImageClip(personaje_image_location).resized(height= 1/3 * video.size[1])
     overlay = overlay_image.with_start(0).with_position(("left", "bottom")).with_duration(DURATION)
     #overlay_image = overlay_image.with_opacity(1)
 
@@ -42,16 +42,17 @@ def create_video(gameplay_location:str, audio_clip_location:str, json_transcript
             words = json.load(f)
             for word in words:
                 
+                font_size_1 = int(1/20 * video.size[1])
                 new_text = TextClip(
                     font=font,
                     text=word["word"].upper(),  # Convertir el texto a mayúsculas
-                    font_size=40,
+                    font_size= font_size_1,
                     color="white",  # Relleno blanco
                     stroke_color="black",  # Borde negro
                     stroke_width=4,  # Grosor del borde
                     text_align="center",
                     method="caption",  # Esto permite que el texto se ajuste automáticamente
-                    size=(video.size[0] - 40, None),  # Ajusta el tamaño del texto al ancho del video
+                    size=(video.size[0] - font_size_1, None),  # Ajusta el tamaño del texto al ancho del video
                     margin=(20, 10)  # Añade un margen alrededor del texto
                 )
                 

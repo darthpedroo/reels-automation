@@ -1,4 +1,4 @@
-from generate_prompt import generate_situation_with_character
+from prompts.generate_prompt import generate_situation_with_character
 
 def videos_personajes(personaje, tema):
     user_input = f"""

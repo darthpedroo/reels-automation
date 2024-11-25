@@ -9,7 +9,7 @@ SAMPLE_RATE = 16000
 SetLogLevel(0)
 
 # Path to the Vosk model
-model_path = "C:/Users/diego/Desktop/vosk-model-es-0.42/vosk-model-es-0.42"
+model_path = "C:/darthpedro/vosk-model-es-0.42/vosk-model-es-0.42"
 model = Model(model_path)
 
 def transcribe_audio(file_path, output_folder):
@@ -73,7 +73,7 @@ def process_folder(input_folder, output_folder):
             transcribe_audio(file_path, output_folder)
 
 # Folder paths (replace these with your actual paths)
-input_folder = "tts_audio"  # Folder containing audio files
+input_folder = "audios_homero"  # Folder containing audio files
 output_folder = "transcripts_homero"  # Folder to save transcripts
 
 # Run the script

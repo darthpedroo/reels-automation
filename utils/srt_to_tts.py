@@ -3,7 +3,7 @@ from gtts import gTTS
 import os
 import shutil
 
-def create_tts_from_srt(json_response: str):
+def create_tts_from_srt(json_response: dict):
 
     mytext = json_response["response"]
     language = 'es'
