@@ -2,19 +2,35 @@ from prompts.generate_prompt import generate_situation_with_character
 
 def videos_personajes(personaje, tema):
     user_input = f"""
-        Eres un modelo especializado en crear guiones para videos cortos de TikTok, y tu tarea es generar un guion educativo hablando como {personaje}. El tema que debes tratar es {tema}. El guion debe estar estructurado de la siguiente manera:
-        - NO MANDAR COMILLAS NI PARENTESIS O CARACTERES ESPECIALES YA QUE ESTO SERA PROCESADO POR UNA BOT DE AUDIO
-        - La introduccion debe ser SUPER CORTA, para que la gente se entretenga.
-        - El guion debe estar entre 60 y 90 segundos de duración. Asegúrate de que el contenido se distribuya de forma uniforme, sin frases apresuradas ni demasiado largas. Mantén un ritmo fluido y natural, con oraciones claras y fáciles de entender.
-        - Usa un estilo conversacional propio de {personaje}. El guion debe sonar como si {personaje} estuviera explicando el tema de manera simple, amigable y entretenida, sin ser demasiado técnico. Imagina que está hablando directamente a una audiencia joven y curiosa.
-        - No incluyas timestamps, marcas, o cualquier tipo de formato de subtítulos. El guion debe ser solo el texto, listo para ser narrado.
-        - Evita explicaciones adicionales o instrucciones. El guion debe centrarse únicamente en el contenido que {personaje} va a decir.
-        - Al final, incluye una despedida breve y amigable, como "¡Y eso es todo por hoy! ¡Hasta la próxima!", para cerrar el video.
-        - Que no haya mas de 130 palabras, ya que deben ser 130 palabras por minuto.
-        Ejemplo de cómo debe sonar:
-        "{personaje} explica el tema de manera clara y directa, intercalando humor o comentarios casuales. Usa ejemplos sencillos y fáciles de seguir."
+        ChatGPT
 
-        Asegúrate de que el contenido sea adecuado para un video educativo de TikTok, manteniendo la atención del espectador en todo momento. El tono debe ser informal, accesible y entretenido.
+Entendido, aquí está la versión revisada sin asteriscos ni aclaraciones sobre las partes. El texto está listo para ser leído por un TTS:
+
+Eres un modelo especializado en crear guiones para videos cortos de TikTok, y tu tarea es generar un guion educativo hablando como {personaje}. El tema que debes tratar es {tema}. El guion debe cumplir con lo siguiente:
+
+    El HOOK inicial debe ser impactante y captar la atención del espectador desde el primer segundo. Usa preguntas intrigantes, datos curiosos o frases que generen intriga y emoción.
+
+    No incluyas encabezados ni aclaraciones sobre partes como "Introducción" o "Conclusión". El texto debe ser directo y listo para ser leído en voz alta por un bot de audio.
+
+    El guion debe durar entre 60 y 90 segundos. Distribuye el contenido de manera uniforme, con frases claras, fluidas y fáciles de entender.
+
+    Cada tanto, incluye frases interactivas para motivar a los espectadores a interactuar, como:
+        Dale like para más videos como este
+        Mándale este video a tu amigo que necesita saber esto
+        Comenta [frase característica de {personaje}]
+        Guarda este video para recordarlo después
+    IMPORTANTE. ESTAS FRASES NO DEBEN SER LO PRIMERO DEL GUION. DEJA ESPACIO PARA ALGO DE INTRODUCCIÓN Y LUEGO INCLUI ESTAAS FRASES
+
+    Adopta un estilo conversacional característico de {personaje}, explicando el tema de manera simple, amigable y entretenida. Usa ejemplos cotidianos y humor para mantener la atención.
+
+    Finaliza con una despedida breve y amigable, dejando una sensación positiva, como Y eso es todo por hoy, hasta la próxima.
+
+    No uses caracteres especiales como asteriscos, paréntesis o comillas. Mantén el texto limpio y directo para el TTS.
+
+    Limítate a 130 palabras por minuto para que el video sea fluido y fácil de seguir.
+
+    Ejemplo de estilo: Imagina que {personaje} está explicando el tema como si hablara directamente con una audiencia joven y curiosa, intercalando humor y frases icónicas. Todo debe sonar ligero y entretenido.
         """
+        
     generate_situation_with_character(user_input,personaje,tema)
 
