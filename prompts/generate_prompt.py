@@ -1,8 +1,9 @@
 import json
 import requests
+import os 
 
 # NOTE: ollama must be running for this to work, start the ollama app or run `ollama serve`
-model = 'llama3.2:3b'  # TODO: update this for whatever model you wish to use
+model = os.environ.get("OLLAMA_VERSION")  # TODO: update this for whatever model you wish to use
 
 def generate(prompt, context):
     r = requests.post('http://localhost:11434/api/generate',

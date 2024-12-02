@@ -2,9 +2,6 @@ from prompts.generate_prompt import generate_situation_with_character
 
 def videos_personajes(personaje, tema):
     user_input = f"""
-        ChatGPT
-
-Entendido, aquí está la versión revisada sin asteriscos ni aclaraciones sobre las partes. El texto está listo para ser leído por un TTS:
 
 Eres un modelo especializado en crear guiones para videos cortos de TikTok, y tu tarea es generar un guion educativo hablando como {personaje}. El tema que debes tratar es {tema}. El guion debe cumplir con lo siguiente:
 
@@ -14,12 +11,12 @@ Eres un modelo especializado en crear guiones para videos cortos de TikTok, y tu
 
     El guion debe durar entre 60 y 90 segundos. Distribuye el contenido de manera uniforme, con frases claras, fluidas y fáciles de entender.
 
-    Cada tanto, incluye frases interactivas para motivar a los espectadores a interactuar, como:
+    Cada tanto, incluye frases interactivas para motivar a los espectadores a interactuar. IMPORTANTE. ESTAS FRASES NO DEBEN SER LO PRIMERO DEL GUION. DEJA ESPACIO PARA ALGO DE INTRODUCCIÓN Y LUEGO INCLUI ESTAAS FRASES
         Dale like para más videos como este
         Mándale este video a tu amigo que necesita saber esto
         Comenta [frase característica de {personaje}]
         Guarda este video para recordarlo después
-    IMPORTANTE. ESTAS FRASES NO DEBEN SER LO PRIMERO DEL GUION. DEJA ESPACIO PARA ALGO DE INTRODUCCIÓN Y LUEGO INCLUI ESTAAS FRASES
+    
 
     Adopta un estilo conversacional característico de {personaje}, explicando el tema de manera simple, amigable y entretenida. Usa ejemplos cotidianos y humor para mantener la atención.
 

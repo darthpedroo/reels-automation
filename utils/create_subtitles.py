@@ -9,7 +9,8 @@ SAMPLE_RATE = 16000
 SetLogLevel(0)
 
 # Path to the Vosk model
-model_path = "C:/darthpedro/vosk-model-es-0.42/vosk-model-es-0.42"
+
+model_path = "C:/Users/diego/Desktop/vosk-model-es-0.42/vosk-model-es-0.42"
 model = Model(model_path)
 
 def transcribe_audio(file_path, output_folder):
@@ -59,7 +60,7 @@ def transcribe_audio(file_path, output_folder):
     print(f"Transcription saved to: {output_json}")
 
 # Main script to loop through a folder
-def process_folder(input_folder, output_folder):
+def process_audios_to_transcript_folder(input_folder, output_folder):
     # Ensure the output folder exists
     os.makedirs(output_folder, exist_ok=True)
 
@@ -72,9 +73,3 @@ def process_folder(input_folder, output_folder):
             print(f"Processing: {file_name}")
             transcribe_audio(file_path, output_folder)
 
-# Folder paths (replace these with your actual paths)
-input_folder = "audios_homero"  # Folder containing audio files
-output_folder = "transcripts_homero"  # Folder to save transcripts
-
-# Run the script
-process_folder(input_folder, output_folder)

@@ -1,6 +1,6 @@
 import os
 import random
-from create_video import create_video
+from video.create_video import create_video
 
 audios_homero_path = "audios_homero"
 gameplays_path = "resources/videos"
@@ -14,7 +14,7 @@ def create_video_homero():
     
     for audio in audios_homero:
         for transcript in transcripts_homero:
-            if audio.split(".wav") == transcript.split(".json"):
+            if audio.split(".wav")[0] == transcript.split(".json")[0] + "_RVC_1":
                 gameplay_path = random.choice(gameplays)
                 homero_foto = random.choice(os.listdir(homero_foto_path))
                 
@@ -30,4 +30,6 @@ def create_video_homero():
     print(audios_homero)
     print(transcripts_homero)
 
-create_video_homero()
+if __name__ == "__main__":
+    create_video_homero()
+# create_video_homero()

@@ -1,7 +1,7 @@
 from pytubefix import YouTube
 
 # Video URL
-url = "https://www.youtube.com/watch?v=a5B8Xx1RPSc"
+url = "https://www.youtube.com/watch?v=tM-bwIEdyKM"
 
 # Initialize YouTube object
 yt = YouTube(url)
